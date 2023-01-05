@@ -1,0 +1,14 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 100px 916px 40px;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu--item{
+    text-decoration: none;
+}
