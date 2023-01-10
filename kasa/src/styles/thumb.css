@@ -1,0 +1,20 @@
+.thumb{
+    background: linear-gradient(180deg, rgba(255, 96, 96, 1) 40%, rgba(0, 0, 0, 0.8) 130%);
+    width: 340px;
+    height: 340px;
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+
+.thumb--title{
+    width: 300px;
+    height: 52px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 500;
+}

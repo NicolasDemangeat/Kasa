@@ -1,14 +1,22 @@
 header{
     display: flex;
     justify-content: space-between;
-    margin: 40px 100px 916px 40px;
+    margin: 50px 0;
 }
 
 .menu{
     display: flex;
     justify-content: space-between;
+    align-items: flex-end;
+    width: 309px;
 }
 
 .menu--item{
     text-decoration: none;
+    color: #FF6060;
+    font-size: 24px;
+    font-weight: 500;
+}
+.menu--item:hover{
+    text-decoration: underline;
 }

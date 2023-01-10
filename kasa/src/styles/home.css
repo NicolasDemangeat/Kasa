@@ -1,0 +1,6 @@
+.home-banner-contener{
+    border-radius: 25px;
+    overflow: hidden;
+    height: 223px;
+    filter : brightness(70%);
+}

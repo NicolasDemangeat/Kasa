@@ -1,0 +1,11 @@
+.tag{
+    width: 115px;
+    height: 25px;
+    border-radius: 10px;
+    background-color: #FF6060;
+    color: white;
+}
+
+.tag--name{
+    margin: 3px 22px;
+}

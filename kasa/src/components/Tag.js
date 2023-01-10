@@ -1,5 +1,4 @@
-import '../datas/logements';
-
+import '../styles/tag.css'
 function Tag() {
     return (
         <div className='tag'>
