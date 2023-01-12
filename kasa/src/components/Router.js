@@ -3,7 +3,7 @@ import Home from '../pages/Home';
 import Apropos from '../pages/Apropos';
 import Badpath from '../pages/Badpath';
 import Header from '../components/Header';
-
+import Footer from '../components/Footer'
 import {
     BrowserRouter,
     Route,
@@ -19,6 +19,7 @@ function Router(){
                 <Route exact path="/logement" element={< Logement />} />
                 <Route path='*' element={< Badpath />}/>
             </Routes>
+            <Footer />
         </BrowserRouter>
 }
 

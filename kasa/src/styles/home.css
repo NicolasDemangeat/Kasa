@@ -3,4 +3,17 @@
     overflow: hidden;
     height: 223px;
     filter : brightness(70%);
+    margin-bottom: 43px;
+}
+
+.section--thumb{
+    background-color: #F7F7F7;
+    border-radius: 25px;
+}
+
+.contener--thumb{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 50px 50px 0 50px;
 }
