@@ -4,11 +4,13 @@ import '../styles/home.css'
 import Thumb from '../components/Thumb'
 import Tag from '../components/Tag'
 import Dropdown from '../components/Dropdown';
+import home_banner from "../assets/bk_home.jpg"
+
 
 function Home() {
   return (
     <React.StrictMode>
-        <BannerHome />
+        <BannerHome src={home_banner}/>
         <div className='section--thumb'>
             <div className='contener--thumb'>
                 <Thumb />
@@ -23,7 +25,7 @@ function Home() {
 
         <Tag />
 
-        <Dropdown largeur="large"/>
+        <Dropdown largeur="large" text="nouvelle valeur"/>
     </React.StrictMode>        
   );
 }
