@@ -2,11 +2,11 @@ import React from 'react';
 import BannerHome from '../components/Home_banner';
 import apropos_banner from '../assets/img_a_proros.jpg';
 import Dropdown from '../components/Dropdown';
-
+import '../styles/apropos.css'
 function Apropos() {
     return (
         <React.StrictMode>
-            <BannerHome src={apropos_banner}/>
+            <BannerHome src={apropos_banner} title={false}/>
             <div className='dropdown--contener--apropos'>
                 <Dropdown largeur="large" title="Fiabilité" text="Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées  par nos équipes."/>
                 <Dropdown largeur="large" title="Respect" text="La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme." />

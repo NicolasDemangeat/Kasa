@@ -10,7 +10,7 @@ import home_banner from "../assets/bk_home.jpg"
 function Home() {
   return (
     <React.StrictMode>
-        <BannerHome src={home_banner}/>
+        <BannerHome src={home_banner} title={true}/>
         <div className='section--thumb'>
             <div className='contener--thumb'>
                 <Thumb />

@@ -1,0 +1,20 @@
+.home-banner-contener{
+    border-radius: 25px;
+    overflow: hidden;
+    height: 223px;
+    margin-bottom: 43px;
+}
+
+.home-banner-contener>h1{
+    position: relative;
+    bottom: 185px;
+    left: 273px;
+    color: white;
+    font-size: 48px;
+    font-weight: 500;
+
+}
+
+.banner-img-contener{
+    filter : brightness(70%);
+}

@@ -22,7 +22,7 @@
     height: 30px;
     width: 25px;
     margin-right: 25px;
-    transition: all linear 0.3s;
+    transition: all linear 0.4s;
 }
 
 .dropdown--title{
@@ -39,13 +39,15 @@
     bottom: 12px;
     z-index: -1;
     margin: auto;
-    height: 0;
+    height: 100%;
     overflow: hidden;
-    transition: all linear 0.3s;
 }
 
 .dropdown--infos{
-    padding: 40px 12px 27px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 25px;
     color: #FF6060;
     font-weight: 400;
     font-size: 24px;
@@ -53,7 +55,4 @@
 
 .dropdown--infos>ul{
     margin: 0;
-}
-.dropdown--contener--apropos{
-    margin-bottom: 50px;
 }
