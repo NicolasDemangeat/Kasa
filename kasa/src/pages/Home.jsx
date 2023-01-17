@@ -8,7 +8,7 @@ import {datas} from '../datas/datas'
 function Home() {
   return (
     <React.StrictMode>
-        <BannerHome src={home_banner} title={true}/>
+        <BannerHome src_img={home_banner} title={true}/>
         <div className='section--thumb'>
             <div className='contener--thumb'>
                 <Thumb imgUrl={datas[0].cover} title={datas[0].title}/>
