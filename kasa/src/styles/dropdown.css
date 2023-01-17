@@ -29,18 +29,18 @@
     margin: 0 20px;
     font-weight: 500;
     font-size: 24px;
-
 }
 
 .dropdown--rectangle{
     background-color: #F7F7F7;
     border-radius: 10px;
     position: relative;
-    bottom: 12px;
+    bottom: 25px;
     z-index: -1;
     margin: auto;
-    height: 100%;
     overflow: hidden;
+    transition: height 0.5s ease-in-out;
+    height: auto;
 }
 
 .dropdown--infos{
@@ -48,6 +48,7 @@
     justify-content: center;
     align-items: center;
     padding-left: 25px;
+    padding-right: 25px;
     color: #FF6060;
     font-weight: 400;
     font-size: 24px;

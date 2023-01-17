@@ -1,11 +1,9 @@
 import BannerHome from '../components/Home_banner'
-import React from 'react';
+import React, { Link } from 'react';
 import '../styles/home.css'
 import Thumb from '../components/Thumb'
-import Tag from '../components/Tag'
-import Dropdown from '../components/Dropdown';
 import home_banner from "../assets/bk_home.jpg"
-
+import {datas} from '../datas/datas'
 
 function Home() {
   return (
@@ -13,19 +11,13 @@ function Home() {
         <BannerHome src={home_banner} title={true}/>
         <div className='section--thumb'>
             <div className='contener--thumb'>
-                <Thumb />
-                <Thumb />
+                <Thumb imgUrl={datas[0].cover} title={datas[0].title}/>
                 <Thumb />
                 <Thumb />
                 <Thumb />
                 <Thumb />
             </div>
-
         </div>
-
-        <Tag />
-
-        <Dropdown largeur="large" text="nouvelle valeur"/>
     </React.StrictMode>        
   );
 }
