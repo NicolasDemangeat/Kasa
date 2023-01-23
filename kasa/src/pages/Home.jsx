@@ -11,11 +11,9 @@ function Home() {
         <BannerHome src_img={home_banner} title={true}/>
         <div className='section--thumb'>
             <div className='contener--thumb'>
-                <Thumb imgUrl={datas[0].cover} title={datas[0].title}/>
-                <Thumb />
-                <Thumb />
-                <Thumb />
-                <Thumb />
+                {datas.map((data) => (
+                    <Thumb key={`${data.id}`} imgUrl={data.cover} title={data.title} id={data.id}/>
+                ))}
             </div>
         </div>
     </React.StrictMode>        
