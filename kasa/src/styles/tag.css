@@ -1,11 +1,16 @@
 .tag{
-    width: 115px;
+    width: auto;
     height: 25px;
     border-radius: 10px;
     background-color: #FF6060;
     color: white;
+    text-align: center;
+    margin: 5px 10px 0 0;
 }
 
 .tag--name{
-    margin: 3px 22px;
+    font-size: 14px;
+    font-weight: 500;
+    margin: 3px;
+    padding: 0 15px;
 }

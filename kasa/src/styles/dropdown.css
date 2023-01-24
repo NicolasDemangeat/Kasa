@@ -22,7 +22,7 @@
     height: 30px;
     width: 25px;
     margin-right: 25px;
-    transition: all linear 0.4s;
+    transition: all .4s linear;
 }
 
 .dropdown--title{
@@ -39,8 +39,7 @@
     z-index: -1;
     margin: auto;
     overflow: hidden;
-    transition: height 0.5s ease-in-out;
-    height: auto;
+    transition: max-height .5s ease-in-out 0s;
 }
 
 .dropdown--infos{

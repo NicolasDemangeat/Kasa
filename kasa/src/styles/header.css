@@ -9,6 +9,7 @@ header{
     justify-content: space-between;
     align-items: flex-end;
     width: 309px;
+    margin-left: 15px;
 }
 
 .menu--item{
@@ -17,6 +18,24 @@ header{
     font-size: 24px;
     font-weight: 500;
 }
-.menu--item:hover{
+.active{
     text-decoration: underline;
+}
+
+
+@media screen and (max-width: 1200px){
+    header{
+        width: 90%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+@media screen and (max-width: 450px){
+    .menu{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 309px;
+    }
 }

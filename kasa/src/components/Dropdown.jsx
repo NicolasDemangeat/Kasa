@@ -5,15 +5,14 @@ import React, { useState } from 'react'
 function Dropdown(props) {
     const [isExpanded, setIsExpanded] = useState(false);
     const [height, setHeight] = useState(0);
-    const [rotation, setRotation] = useState(0)
-
+    const [rotation, setRotation] = useState(0);
     const changeDirection = () => {
         setRotation(rotation === 0 ? 180 : 0)
     }
 
     const extend =  () => {
         setIsExpanded(!isExpanded);
-        setHeight(isExpanded ? 0 : 220);
+        setHeight(isExpanded ? 0 : 2500);
       }
 
     return (
@@ -22,7 +21,7 @@ function Dropdown(props) {
                     <p className='dropdown--title'>{props.title}</p>
                     <img src={img} alt="flèche" className='dropdown--arrow' style={{ transform: `rotate(${rotation}deg)`}}/>
                 </div>
-                <div className={`dropdown--rectangle ${props.largeur}`} style={{height: height}}>
+                <div className={`dropdown--rectangle ${props.largeur}`} style={{maxHeight: height}}>
                     <div className='dropdown--infos'>
                         {props.largeur === 'large' ? <p>{props.text}</p> : null}
                     </div>

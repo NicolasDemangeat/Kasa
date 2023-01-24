@@ -1,0 +1,46 @@
+.logement-contener{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logement-title-contener{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.logement-title-contener--items{
+    margin: 0;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+.logement-tag-contener{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.logement{
+    color: #FF6060;
+}
+
+.photo-contener2{
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 18px;
+}
+.photo-contener2>img{
+    margin-left: 10px;
+    border-radius: 50%;
+    width: 64px;
+    height: 64px;
+}
+
+
+@media screen and (max-width: 1200px){
+    .logement{
+        width: 90%;
+        margin: auto;
+    }
+}
