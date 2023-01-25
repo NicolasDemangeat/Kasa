@@ -23,3 +23,10 @@
 a{
     text-decoration: none;
 }
+
+@media screen and (max-width: 380px) {
+    .thumb{
+        width: 250px;
+        height: 250px;
+    }
+}

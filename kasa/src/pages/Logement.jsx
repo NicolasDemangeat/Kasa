@@ -2,12 +2,18 @@ import { useParams   } from 'react-router-dom'
 import {datas} from '../datas/datas'
 import Tag from '../components/Tag'
 import Carousel from '../components/Carousel'
+import Dropdown from '../components/Dropdown'
 import '../styles/logement.css'
+import fullStar from '../assets/fullStar.png'
+import greyStar from '../assets/greyStar.png'
+
 
 function Logement() {
     let { id } = useParams();
     const item = datas.filter(data => data.id === id)
     const img = item[0].host.picture
+    const fullStarsNumber = item[0].rating
+    const greyStarsNumber = 5 - fullStarsNumber
 
     return (
         <div className='logement'>
@@ -29,10 +35,23 @@ function Logement() {
                         <p>{item[0].host.name}</p>
                         <img src={img} alt="profil du vendeur" />
                     </div>
-                    <div className='starts-contener2'>
-
+                    <div className='stars-contener2'>
+                        {Array.from({ length: fullStarsNumber }, (_, i) => (
+                            <img className='stars' key={i} src={fullStar} alt="étoiles de notation pleine" />
+                        ))}
+                        {Array.from({ length: greyStarsNumber }, (_, i) => (
+                            <img className='stars' key={i} src={greyStar} alt="étoiles de notation vide" />
+                        ))}
                     </div>
-                </div>
+                </div>                
+            </div>
+            <div className='dropdown-contener'>
+                <Dropdown largeur="little" title="Description" text={item[0].description} />
+                <Dropdown largeur="little" title="Équipments" text={item[0].equipments.map(element => {
+                    return (
+                        <p className='dropdown-element-list'>{element}</p>
+                        )
+                })} />
             </div>
         </div>
     )

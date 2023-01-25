@@ -16,17 +16,17 @@ function Dropdown(props) {
       }
 
     return (
-            <div className='all-dropdown'>
-                <div className={`dropdown ${ props.largeur }`} onClick={()=>{ extend(); changeDirection() }} >
-                    <p className='dropdown--title'>{props.title}</p>
-                    <img src={img} alt="flèche" className='dropdown--arrow' style={{ transform: `rotate(${rotation}deg)`}}/>
-                </div>
-                <div className={`dropdown--rectangle ${props.largeur}`} style={{maxHeight: height}}>
-                    <div className='dropdown--infos'>
-                        {props.largeur === 'large' ? <p>{props.text}</p> : null}
-                    </div>
+        <div className='all-dropdown'>
+            <div className={`dropdown ${ props.largeur }`} onClick={()=>{ extend(); changeDirection() }} >
+                <p className='dropdown--title'>{props.title}</p>
+                <img src={img} alt="flèche" className='dropdown--arrow' style={{ transform: `rotate(${rotation}deg)`}}/>
+            </div>
+            <div className={`dropdown--rectangle ${props.largeur}`} style={{maxHeight: height}}>
+                <div className='dropdown--infos'>
+                    <p>{props.text}</p>
                 </div>
             </div>
+        </div>
     )
 }
 

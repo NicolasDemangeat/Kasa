@@ -7,15 +7,17 @@
     height: 42px;
     margin: 15px auto;
 }
-
+.all-dropdown{
+    width: 100%;
+}
 .little{
-    width: 400px;
+    width: 90%;
     border-radius: 10px;
 }
 
 .large{
-    width: 90%;
     border-radius: 5px;
+    width: 90%;
 }
 
 .dropdown--arrow{
@@ -44,13 +46,12 @@
 
 .dropdown--infos{
     display: flex;
-    justify-content: center;
-    align-items: center;
     padding-left: 25px;
     padding-right: 25px;
     color: #FF6060;
     font-weight: 400;
     font-size: 24px;
+    text-align: left;
 }
 
 .dropdown--infos>ul{

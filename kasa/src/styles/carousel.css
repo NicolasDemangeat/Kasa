@@ -9,6 +9,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 35px;
 }
 
 .arrow {
@@ -29,4 +30,15 @@
 .left {
     transform: rotate(135deg);
     -webkit-transform: rotate(135deg);
+}
+.hidden{
+    visibility: hidden;
+}
+
+.counter{
+    align-self: flex-end;
+    color: white;
+    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 20px;
 }
