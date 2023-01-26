@@ -1,0 +1,41 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 0;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 309px;
+    margin-left: 15px;
+}
+
+.menu--item{
+    text-decoration: none;
+    color: #FF6060;
+    font-size: 24px;
+    font-weight: 500;
+}
+.active{
+    text-decoration: underline;
+}
+
+
+@media screen and (max-width: 1200px){
+    header{
+        width: 90%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+@media screen and (max-width: 450px){
+    .menu{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 309px;
+    }
+}

@@ -1,0 +1,18 @@
+.tag{
+    width: auto;
+    height: auto;
+    border-radius: 10px;
+    background-color: #FF6060;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 10px 0 0;
+}
+
+.tag--name{
+    font-size: 14px;
+    font-weight: 500;
+    margin: 3px;
+    padding: 0 15px;
+}

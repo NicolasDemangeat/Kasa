@@ -1,0 +1,32 @@
+.thumb{
+    width: 340px;
+    height: 340px;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.thumb--title{
+    width: 100%;
+    height: 52px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 500;
+}
+a{
+    text-decoration: none;
+}
+
+@media screen and (max-width: 380px) {
+    .thumb{
+        width: 250px;
+        height: 250px;
+    }
+}
