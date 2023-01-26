@@ -52,6 +52,8 @@
     font-weight: 400;
     font-size: 24px;
     text-align: left;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 .dropdown--infos>ul{

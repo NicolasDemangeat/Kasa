@@ -32,7 +32,7 @@ function Carousel(props){
                 onMouseEnter={() => setHover(true)} 
                 onMouseLeave={() => setHover(false)} 
                 style={{ cursor: hover ? 'pointer' : 'default' }}>
-                <i class="arrow left"></i>
+                <i className="arrow left"></i>
             </div>
             <div className={`counter ${visible}`}>
                 {`${currentImageIndex + 1}/${images.length}`}
@@ -41,7 +41,7 @@ function Carousel(props){
                 onMouseEnter={() => setHover(true)} 
                 onMouseLeave={() => setHover(false)} 
                 style={{ cursor: hover ? 'pointer' : 'default' }}>
-                <i class="arrow right"></i>
+                <i className="arrow right"></i>
             </div>
         </div>
     );

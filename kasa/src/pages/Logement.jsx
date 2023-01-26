@@ -1,4 +1,4 @@
-import { useParams   } from 'react-router-dom'
+import { useParams, Navigate } from 'react-router-dom'
 import {datas} from '../datas/datas'
 import Tag from '../components/Tag'
 import Carousel from '../components/Carousel'
@@ -11,6 +11,9 @@ import greyStar from '../assets/greyStar.png'
 function Logement() {
     let { id } = useParams();
     const item = datas.filter(data => data.id === id)
+    if (item.length === 0){
+        return <Navigate to="/badpath" replace={true} />
+    }
     const img = item[0].host.picture
     const fullStarsNumber = item[0].rating
     const greyStarsNumber = 5 - fullStarsNumber
@@ -49,7 +52,7 @@ function Logement() {
                 <Dropdown largeur="little" title="Description" text={item[0].description} />
                 <Dropdown largeur="little" title="Équipments" text={item[0].equipments.map(element => {
                     return (
-                        <p className='dropdown-element-list'>{element}</p>
+                        <p key={element} className='dropdown-element-list'>{element}</p>
                         )
                 })} />
             </div>

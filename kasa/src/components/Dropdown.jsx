@@ -23,7 +23,7 @@ function Dropdown(props) {
             </div>
             <div className={`dropdown--rectangle ${props.largeur}`} style={{maxHeight: height}}>
                 <div className='dropdown--infos'>
-                    <p>{props.text}</p>
+                    <div>{props.text}</div>
                 </div>
             </div>
         </div>

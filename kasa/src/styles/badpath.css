@@ -11,11 +11,14 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    width: 95%;
+    margin: auto;
 }
 .badpath--text{
     color: #FF6060;
     font-weight: 500;
     font-size: 36px;
+    text-align: center;
 }
 
 .badpath--link{
@@ -23,8 +26,24 @@
     font-weight: 500;
     font-size: 18px;
     margin-bottom: 50px;
+    text-align: center;
 }
 
 .badpath--link:hover{
     text-decoration: underline;
+}
+
+@media screen and (max-width: 620px) {
+    .badpath{
+        font-size: 188px;
+    }
+    .badpath--text{
+        font-size: 26px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .badpath{
+        font-size: 100px;
+    }
 }
