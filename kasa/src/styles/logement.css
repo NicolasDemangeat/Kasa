@@ -46,8 +46,7 @@ ul{
 }
 .dropdown-contener{
     display: flex;
-    align-items: flex-start;
-
+    justify-content: space-between;
 }
 .dropdown-element-list{
     margin: 5px 0;

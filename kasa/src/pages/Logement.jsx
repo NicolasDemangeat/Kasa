@@ -49,8 +49,8 @@ function Logement() {
                 </div>                
             </div>
             <div className='dropdown-contener'>
-                <Dropdown largeur="little" title="Description" text={item[0].description} />
-                <Dropdown largeur="little" title="Équipments" text={item[0].equipments.map(element => {
+                <Dropdown largeur="little" pos="right-dropdown" title="Description" text={item[0].description} />
+                <Dropdown largeur="little" pos="left-dropdown" title="Équipments" text={item[0].equipments.map(element => {
                     return (
                         <p key={element} className='dropdown-element-list'>{element}</p>
                         )

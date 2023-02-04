@@ -5,19 +5,27 @@
     justify-content: space-between;
     align-items: center;
     height: 42px;
-    margin: 15px auto;
+
 }
 .all-dropdown{
     width: 100%;
 }
 .little{
-    width: 90%;
+    width: auto;
     border-radius: 10px;
+    margin: auto;
+}
+.left-dropdown{
+    margin-left: 35px;
+}
+.right-dropdown{
+    margin-right: 35px;
 }
 
 .large{
     border-radius: 5px;
     width: 90%;
+    margin: 15px auto;
 }
 
 .dropdown--arrow{
@@ -39,9 +47,9 @@
     position: relative;
     bottom: 25px;
     z-index: -1;
-    margin: auto;
+
     overflow: hidden;
-    transition: max-height .5s ease-in-out 0s;
+    transition: max-height .5s ease-in-out;
 }
 
 .dropdown--infos{
@@ -52,7 +60,7 @@
     font-weight: 400;
     font-size: 24px;
     text-align: left;
-    margin-top: 15px;
+    margin-top: 45px;
     margin-bottom: 15px;
 }
 
